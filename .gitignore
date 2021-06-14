@@ -1,0 +1,6 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\_*
+.Rhistory
+TEST.R
+
