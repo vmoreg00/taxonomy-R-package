@@ -1,0 +1,11 @@
+Package: taxonomy
+Type: Package
+Title: Taxonomy toolbox to develop dichotomous keys in a programatic environment
+Version: 0.1.0
+Author: Víctor Moreno-González
+Maintainer: Víctor Moreno-González <vmorg@unileon.es>
+Imports:
+Description: .
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
