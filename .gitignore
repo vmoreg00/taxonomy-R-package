@@ -1,6 +1,6 @@
-^.*\.Rproj$
-^\.Rproj\.user$
-^\_*
+_*
 .Rhistory
+.Rproj.user
+*.pptx
 TEST.R
-
+*Book?.xls*

@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^_*
+data
+TEST.R
+.git
+.gitignore
+.Rhistory
+*.pptx
