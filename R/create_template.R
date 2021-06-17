@@ -1,11 +1,12 @@
 # Created by: V. Moreno-González <vmorg@unileon.es>
 # Creation date: 2021-06-16
-# Modification date: 2021-06-16
-# Last commit: creation. IT IS A DRAFT !!!
-# TO-DO list: - test
-#             - Create function documentation
+# Modification date: 2021-06-17
+# Last commit: Documented and tested
 
-create_template <- function(path){
+create_template <- function(path = "."){
+  if(endsWith(path, "/")){
+    path = gsub("/$", "", path)
+  }
   features <- data.frame(ID = c(1:10),
                          V1 = rep("", 10),
                          V2 = rep("", 10),
@@ -27,7 +28,8 @@ create_template <- function(path){
     openxlsx::writeData(wb = template_wb, sheet = i,
                         template[[i]])
   }
-  openxlsx::saveWorkbook(wb = template_wb, file = path)
+  openxlsx::saveWorkbook(wb = template_wb, file = paste0(path.expand(path),
+                                                         "/template.xls"))
   
   cat("\n", rep("*", 80), sep = "")
   cat("\nTEMPLATE CREATION")
